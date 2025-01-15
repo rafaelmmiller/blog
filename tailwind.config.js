@@ -21,11 +21,11 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
+        sans: ['Lato', ...fontFamily.sans],
       },
       colors: {
-        primary: colors.pink,
-        heading: colors.blue,
+        primary: colors.emerald,
+        heading: colors.black,
         gray: colors.gray,
       },
       typography: ({ theme }) => ({
@@ -55,9 +55,9 @@ module.exports = {
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
-                color: `${theme('colors.primary.400')}`,
+                color: `${theme('colors.primary.500')}`,
               },
-              code: { color: theme('colors.primary.400') },
+              code: { color: theme('colors.primary.500') },
             },
             'h1,h2,h3,h4,h5,h6': {
               color: theme('colors.gray.100'),

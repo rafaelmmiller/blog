@@ -57,14 +57,15 @@ const LangSwitch = () => {
         {({ open }) => (
           <div>
             <MenuButton
-              className="inline-flex rounded-md px-1 py-2 font-bold leading-5 text-gray-700 shadow-sm dark:text-white"
+              className="inline-flex rounded-md px-1 py-2 font-bold leading-5 text-gray-700 dark:text-white"
               aria-haspopup="true"
               aria-expanded={open}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {currentLocale}
               <ChevronDownIcon
-                className={`ml-1 mt-1 transform transition-transform duration-300 ${open ? 'rotate-180' : 'rotate-0'}`}
+                fill='#000'
+                className={`ml-1 mt-1 transform transition-transform duration-300 text-primary-500 fill-primary ${open ? 'rotate-180' : 'rotate-0'}`}
               />
             </MenuButton>
             <Transition

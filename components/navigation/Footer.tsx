@@ -38,39 +38,46 @@ export default function Footer() {
                 </button>
               )}
             </div>
-            <div className="flex items-center">
-              <SocialIcon kind="github" href={siteMetadata.github} size={6} />
-            </div>
-            <div className="flex items-center">
-              <SocialIcon kind="facebook" href={siteMetadata.facebook} size={6} />
-            </div>
-            <div className="flex items-center">
-              <SocialIcon kind="youtube" href={siteMetadata.youtube} size={6} />
-            </div>
-            <div className="flex items-center">
-              <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size={6} />
-            </div>
-            <div className="flex items-center">
-              <SocialIcon kind="x" href={siteMetadata.x} size={6} />
-            </div>
-            <div className="flex items-center">
-              <SocialIcon kind="instagram" href={siteMetadata.instagram} size={6} />
-            </div>
-            <div className="flex items-center">
-              <SocialIcon kind="threads" href={siteMetadata.threads} size={6} />
-            </div>
+            {siteMetadata.github && (
+              <div className="flex items-center">
+                <SocialIcon kind="github" href={siteMetadata.github} size={6} />
+              </div>
+            )}
+            {siteMetadata.facebook && (
+              <div className="flex items-center">
+                <SocialIcon kind="facebook" href={siteMetadata.facebook} size={6} />
+              </div>
+            )}
+            {siteMetadata.youtube && (
+              <div className="flex items-center">
+                <SocialIcon kind="youtube" href={siteMetadata.youtube} size={6} />
+              </div>
+            )}
+            {siteMetadata.linkedin && (
+              <div className="flex items-center">
+                <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size={6} />
+              </div>
+            )}
+            {siteMetadata.x && (
+              <div className="flex items-center">
+                <SocialIcon kind="x" href={siteMetadata.x} size={6} />
+              </div>
+            )}
+            {siteMetadata.instagram && (
+              <div className="flex items-center">
+                <SocialIcon kind="instagram" href={siteMetadata.instagram} size={6} />
+              </div>
+            )}
+            { siteMetadata.threads &&
+              <div className="flex items-center">
+                <SocialIcon kind="threads" href={siteMetadata.threads} size={6} />
+              </div>
+            }
           </div>
-          <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
+          <div className="mb-4 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
             <div>{siteMetadata.author}</div>
             <div>{` • `}</div>
             <div>{`© ${new Date().getFullYear()}`}</div>
-            <div>{` • `}</div>
-            <Link href="/">{maintitle[locale]}</Link>
-          </div>
-          <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
-            <Link href="https://github.com/PxlSyl/tailwind-nextjs-starter-blog-i18n">
-              {t('theme')}
-            </Link>
           </div>
         </div>
       </footer>

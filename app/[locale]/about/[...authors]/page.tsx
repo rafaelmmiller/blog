@@ -32,14 +32,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata 
 
 export default async function Page({ params }: PageProps) {
   const { authors, locale } = await params
+  console.log({locale, authors})
+  console.log({allAuthors})
   const authorSlug = decodeURI(authors.join('/'))
+  console.log({authorSlug})
   const author = allAuthors.find((a) => a.slug === authorSlug && a.language === locale) as Authors
+  console.log({author})
   const authorIndex = allAuthors.findIndex((p) => p.slug === authorSlug)
   if (authorIndex === -1) {
     return notFound()
   }
   const mainContent = coreContent(author)
-
+  console.log({locale, author})
   return (
     <AuthorLayout params={{ locale }} content={mainContent}>
       <MDXLayoutRenderer code={author.body.code} />

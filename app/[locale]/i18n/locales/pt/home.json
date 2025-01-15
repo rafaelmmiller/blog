@@ -1,0 +1,28 @@
+{
+  "greeting": "Mais recentes",
+  "description": "Onde os ciclos da vida—paternidade, programação, cerveja e mais :D",
+  "more": "Leia mais",
+  "all": "Todos os artigos",
+  "moreaboutme": "Mais sobre mim",
+  "featured": "Em destaque",
+  "morefeatured": "Mais artigos em destaque",
+  "morerecent": "Mais artigos recentes",
+  "search": "Pesquisa",
+  "searchposts": "Procurar artigos",
+  "comment": "Carregar comentários",
+  "pub": "Publicado em",
+  "authors": "Autores",
+  "name": "Nome",
+  "nexta": "Próximo Artigo",
+  "preva": "Artigo Anterior",
+  "nextp": "Próximo",
+  "prevp": "Anterior",
+  "of": "de",
+  "back": "Voltar ao blog",
+  "twitter": "Discutir no Twitter",
+  "github": "Ver no GitHub",
+  "draft": "Em Construção",
+  "noposts": "Nenhum artigo encontrado",
+  "poststagged": "Ver posts marcados"
+}
+
